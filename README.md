@@ -8,6 +8,8 @@ A region of a texture, typically used for rendering sprites in a texture atlas o
 
 This is useful alongside [kami](http://github.com/mattdesl/kami), but not necessarily tied to it.
 
+The coordinate system used has its origin in the upper left corner with the x-axis pointing to the right and the y axis pointing downwards.
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/texture-region.png)](https://nodei.co/npm/texture-region/)
