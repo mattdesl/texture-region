@@ -45,6 +45,10 @@ console.log( region.x, region.y, region.width, region.height );
 
 ### methods
 
+## `TextureRegion(texture, x, y, width, height)`
+
+The constructor. The region is in pixels, and is optional. XY will default to zero. width/height will default to the size of the given texture.
+
 ## `setUVs(u, v, u2, v2)`
 
 Updates the UVs and scales the region's pixel values accordingly, based on the associated texture. For example:
@@ -74,6 +78,11 @@ Copies the values of the other region into this region.
 ## `flip(u, v)`
 
 Flips the UV coordinates on either or both axes. `u` and `v` are booleans specifying whether to flip that axis.
+
+
+## AMD Filtering Fix
+
+This includes a fix for 1x1 regions, pushing the UVs closer to texture center. Without this, some AMD GPUs will have strange texture artifacts (noted in LibGDX docs). You can disable this fix by setting `TextureRegion.FIX_AMD` to false.
 
 ## License
 
