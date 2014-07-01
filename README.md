@@ -2,7 +2,7 @@
 
 # texture-region
 
-[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 A region of a texture, typically used for rendering sprites in a texture atlas on the GPU. Largely inspired by LibGDX's TextureRegion utility. 
 
