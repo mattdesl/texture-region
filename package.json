@@ -1,0 +1,55 @@
+{
+  "name": "texture-region",
+  "version": "1.0.0",
+  "description": "util for getting UV coordinates of an image",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/texture-region.git"
+  },
+  "homepage": "https://github.com/mattdesl/texture-region",
+  "bugs": {
+    "url": "https://github.com/mattdesl/texture-region/issues"
+  },
+  "keywords": [
+    "uv",
+    "texture",
+    "region",
+    "u",
+    "v",
+    "s",
+    "t",
+    "tangent",
+    "normalized",
+    "coordinates",
+    "atlas",
+    "sprite",
+    "spritesheet",
+    "sheet",
+    "texture",
+    "pack",
+    "uvs"
+  ]
+}
