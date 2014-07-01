@@ -43,13 +43,13 @@ console.log( region.x, region.y, region.width, region.height );
 - `width` the width of the region in pixels
 - `height` the height of the region in pixels
 
-### methods
+## methods
 
-## `TextureRegion(texture, x, y, width, height)`
+### `TextureRegion(texture, x, y, width, height)`
 
 The constructor. The region is in pixels, and is optional. XY will default to zero. width/height will default to the size of the given texture.
 
-## `setUVs(u, v, u2, v2)`
+### `setUVs(u, v, u2, v2)`
 
 Updates the UVs and scales the region's pixel values accordingly, based on the associated texture. For example:
 
@@ -63,19 +63,19 @@ region.width => 50
 region.height => 50
 ```
 
-## `setRegion(x, y, width, height)`
+### `setRegion(x, y, width, height)`
 
 Updates the region in pixels, based on the associated texture. If width or height is not defined, they will default to the texture width and height. The x and y will defualt to zero.
 
-## `clone()`
+### `clone()`
 
 Returns a clone of this region.
 
-## `copy(otherRegion)`
+### `copy(otherRegion)`
 
 Copies the values of the other region into this region.
 
-## `flip(u, v)`
+### `flip(u, v)`
 
 Flips the UV coordinates on either or both axes. `u` and `v` are booleans specifying whether to flip that axis.
 
