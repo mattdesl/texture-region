@@ -47,13 +47,15 @@ console.log( region.x, region.y, region.width, region.height );
 
 Updates the UVs and scales the region's pixel values accordingly, based on the associated texture. For example:
 
-```//with texture: {width: 50, height: 50}
+```js
+//with texture: {width: 50, height: 50}
 region.setUV(0, 0, 1, 1);
 
 region.x => 0
 region.y => 0
 region.width => 50
 region.height => 50
+```
 
 ## `setRegion(x, y, width, height)`
 
