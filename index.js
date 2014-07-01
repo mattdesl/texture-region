@@ -21,7 +21,7 @@ TextureRegion.prototype.setUVs = function(u, v, u2, v2) {
     // From LibGDX TextureRegion.java -- 
 	// For a 1x1 region, adjust UVs toward pixel center to avoid 
 	// filtering artifacts on AMD GPUs when drawing very stretched.
-	if (TextureRegion.FIX_AMD_FILTERING &&
+	if (TextureRegion.FIX_AMD &&
 			this.width == 1 && this.height == 1) {
 		var adjustX = 0.25 / this.texture.width;
 		u += adjustX;
@@ -98,6 +98,6 @@ TextureRegion.prototype.flip = function(x, y) {
  * 
  * @type {Boolean}
  */
-TextureRegion.FIX_AMD_FILTERING = true;
+TextureRegion.FIX_AMD = true;
 
 module.exports = TextureRegion;
