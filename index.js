@@ -2,6 +2,8 @@
 //A canvas-specific region would really just be a lightweight object with { x, y, width, height }
 //in pixels.
 function TextureRegion(texture, x, y, width, height) {
+	if (!(this instanceof TextureRegion))
+		return new TextureRegion(texture, x, y, width, height);
 	//defaults
 	this.width = 0;
 	this.height = 0;
