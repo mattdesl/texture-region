@@ -47,7 +47,7 @@ console.log( region.x, region.y, region.width, region.height );
 
 ### `TextureRegion(texture, x, y, width, height)`
 
-The constructor. The region is in pixels, and is optional. XY will default to zero. width/height will default to the size of the given texture.
+The constructor. The region is in pixels, and is optional. XY will default to zero. width/height will default to the size of the given texture. The `new` keyword is optional.
 
 ### `setUVs(u, v, u2, v2)`
 
