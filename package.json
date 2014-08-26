@@ -1,6 +1,6 @@
 {
   "name": "texture-region",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "util for handling UV coordinates of an image region",
   "main": "index.js",
   "license": "MIT",
